@@ -198,8 +198,12 @@ main{
 article{
 	width:60%;
 	max-height:600px;
+	//min-height:300px;
 	margin:0px auto;
 	margin-top:100px;
+	//color:transparent;
+	//background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+	//-webkit-background-clip:text;
 	padding:20px;
 	overflow: auto;
 	box-shadow: 0 10px 20px 0 rgba(237, 110, 160,.3);
@@ -208,7 +212,8 @@ article img{
 	border-radius:2%;
 }
 .description{
-
+	//background-color: rgba(243,130,136,0.2);
+	//height:300px;
 	padding:10px;
 	border:2px solid rgba(243,130,136,0.2);
 }
@@ -274,9 +279,9 @@ table img{
 }
 
 .project_list{
-
+	//background-color: rgba(243,130,136,0.2);
 	padding:10px;
-
+	//min-height:300px;
 	border:2px solid rgba(243,130,136,0.2);
 }
 .project_list ul li{
