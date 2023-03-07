@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 	scroll-behavior: smooth;
+	//font-family: Helvetica,Trebuchet MS,Arial,sans-serif; 
 }
 :root {
   scroll-padding-top: 100px;
@@ -12,8 +13,7 @@
 	height:100%;
 	left: 0%;
 	right: 0%;
-	background-color:#0A1931;
-	\\background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	//background-color:#0A1931;
 	background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 	z-index:9999;
 }
@@ -38,7 +38,7 @@
   text-shadow:0 0 10px #ffffff;
   box-shadow:0 0 20px #fff;
 }
-.ring:before /*黃色繞圈的線*/
+.ring:before /*繞圈的線*/
 {
   content:'';
   position:absolute;
@@ -64,7 +64,7 @@ span
   transform-origin:left;
   animation:animate 3s linear infinite;
 }
-span:before /*黃色繞圈圓點點*/
+span:before /*繞圈圓點點*/
 {
   content:'';
   position:absolute;
@@ -100,26 +100,21 @@ span:before /*黃色繞圈圓點點*/
 }
 /*--------------------------------------------------*/
 nav{
-	//height:70px;
-	//background-color:#fff;
-	//position:sticky;
-	//top:0;
 	z-index:1;
-	
-	/*.container{
-	width:1024px;
-	margin:0 auto;
-	}*/
+	position:sticky;
+	top:0;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+	background-color: #fff;
 }
+
 nav .container{
 	width:80%;
 	margin:0 auto;
-	//background-color:#000;
-	
 }
+
+
 .logo{
 	display:inline;
-	//background-color:#CCC;
 }
 .logo a{
 	text-decoration: none;
@@ -127,10 +122,22 @@ nav .container{
 	color:#000;
 	line-height:50px;
 	font-size:30px;
-	}
+	
+}
+.logo_img{
+	display:inline;
+	height:35px;
+	width:35px;
+	overflow:hidden;
+}
+.logo_img img{
+	height:35px;
+	width:35px;
+	vertical-align:middle;
+}
+	
 .menu{
     float:right;
-	//background-color:#CCA;
 }
 .menu li{
 	list-style: none;
@@ -149,10 +156,9 @@ nav .container{
 }
     
 .menu a:hover{
-    /*background-color:#000;
-    color:#fff;*/
+    
 	color: transparent !important; /* 文字顏色設定透明 */
-	background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%) !important; /* 設定漸層角度及顏色 */
+	background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%) !important; /* 設定漸層角度及顏色 */
 	-webkit-background-clip: text !important; /* 背景裁剪成文字的前景色 */
 	background-clip: text !important;
 	transition:0.3s;
@@ -160,14 +166,10 @@ nav .container{
 
 header{
 	height:110vh ;
-	//background-image: url("pt/header.jpg");
 	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 	max-width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	//background-position:center center;
-	//background-color:#ccc;
-	//padding:5px;
 }
 
 header .container{
@@ -195,30 +197,43 @@ main{
 }
 article{
 	width:60%;
-	height:600px;
+	max-height:600px;
+	//min-height:300px;
 	margin:0px auto;
 	margin-top:100px;
-	//background-color:#ccc;
-	background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
-	//color:white;
-	padding:10px;
+	//color:transparent;
+	//background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+	//-webkit-background-clip:text;
+	padding:20px;
 	overflow: auto;
+	box-shadow: 0 10px 20px 0 rgba(237, 110, 160,.3);
+}
+article img{
+	border-radius:2%;
+}
+.description{
+	//background-color: rgba(243,130,136,0.2);
+	//height:300px;
+	padding:10px;
+	border:2px solid rgba(243,130,136,0.2);
 }
 
 section{
-	
+	margin-top:15px;
 }
+
 h1{
 	font-size:50px;
+	color: #f27b13;
+	text-shadow:0 0 0.2em #fcd0c5;
 }
 .wrap{
-	 margin: auto;
+	margin: auto;
+	background-color: rgba(243,130,136,0.2);
+	padding:10px;
 }
-
 .image{
-
-	//background-color:#fcf;
-	border:3px #fff dashed;
+	border:3px #fff;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -229,15 +244,12 @@ h1{
 	text-align: left;
 	line-height:30px;
 }
-
 .boss a{
 	display:flex;
     margin-right: 20px;
 	color:#000;
 	text-decoration: none;
-	
 }
-
 .boss a:hover{
     
 	color: transparent !important; /* 文字顏色設定透明 */
@@ -245,12 +257,79 @@ h1{
 	-webkit-background-clip: text !important; /* 背景裁剪成文字的前景色 */
 	background-clip: text !important;
 	transition:0.3s;
-}	
-.image img{
-	
+}
+
+.image .boss img{
 	width:250px;
 	height:250px;
+	margin:20px 0%;	
+}	
+.image img{
+	width:200px;
+	height:200px;
+	margin:20px 0%;	
+}
+table img{
+	width:200px;
+	height:200px;
 	margin:20px auto;	
+}
+.hr1{
+	border:1.5px dashed rgba(243,130,136,0.2);
+}
+
+.project_list{
+	//background-color: rgba(243,130,136,0.2);
+	padding:10px;
+	//min-height:300px;
+	border:2px solid rgba(243,130,136,0.2);
+}
+.project_list ul li{
+	list-style: none;
+	//background-color:#fff;
+	margin: 8px 0;
+	font-weight:bold;
+	padding:3px;	
+}
+.project_title{
+	font-size:20px;
+	font-weight:bold;
+	color:	#272727;
+}
+.project_des{
+	color:#4F4F4F;
+}
+.hr2{
+	border:1px solid rgba(243,130,136,0.2);
+}
+.contactus{
+	display: flex;
+	flex-direction:row;
+
+}
+.childdiv{
+	
+	width:32%;
+	height:400px;
+	margin:1%;
+	background-color: rgba(243,130,136,0.2);
+	padding:10px;
+	text-align:center;
+}
+h3{
+	text-align:center;
+	margin:10px;
+	background-color:white;
+	padding:15px;
+}
+.map{
+	height:260px;
+	//background-color:#ccc;
+}
+iframe{
+	width:100%;
+	height:100%;
+	max-height:255px;
 }
 
 footer{
@@ -261,7 +340,6 @@ footer{
 	//align-items:center;
 }
 footer .container{
-	
 	width:80%;
 	margin:0 auto;
 }
