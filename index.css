@@ -198,8 +198,12 @@ main{
 article{
 	width:60%;
 	max-height:600px;
+	//min-height:300px;
 	margin:0px auto;
 	margin-top:100px;
+	//color:transparent;
+	//background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+	//-webkit-background-clip:text;
 	padding:20px;
 	overflow: auto;
 	box-shadow: 0 10px 20px 0 rgba(237, 110, 160,.3);
@@ -208,7 +212,8 @@ article img{
 	border-radius:2%;
 }
 .description{
-
+	//background-color: rgba(243,130,136,0.2);
+	//height:300px;
 	padding:10px;
 	border:2px solid rgba(243,130,136,0.2);
 }
@@ -269,14 +274,19 @@ table img{
 	height:200px;
 	margin:20px auto;	
 }
+
+.img_div{
+		background-color:#fff;
+		padding:10px;
+}
 .hr1{
 	border:1.5px dashed rgba(243,130,136,0.2);
 }
 
 .project_list{
-
+	//background-color: rgba(243,130,136,0.2);
 	padding:10px;
-
+	//min-height:300px;
 	border:2px solid rgba(243,130,136,0.2);
 }
 .project_list ul li{
@@ -337,4 +347,47 @@ footer{
 footer .container{
 	width:80%;
 	margin:0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+   nav .container{
+	z-index:1;
+	width:100%;
+	margin-bottom:50px;
+	margin:0 auto;
+	position:fixed;
+	bottom:0px;
+	}
+	.logo{
+	display:none;
+	}
+	.menu{
+	width:100%;
+    text-align:justify;
+	background-color: #fff;
+	}
+	.menu li{
+	list-style: none;
+    float:left;
+	width:20%;
+	margin:1%;
+	}
+	
+	.Contact{
+	display: flex;
+	flex-direction:column;
+	}
+	.childdiv{
+	
+	width:80%;
+	//height:200px;
+	margin:1%;
+	background-color: rgba(243,130,136,0.2);
+	padding:10px;
+	//text-align:center;
+	}
+	iframe{
+		display:none;
+	}
 }
