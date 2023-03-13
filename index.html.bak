@@ -3,7 +3,7 @@
 	<head>
 	<link rel=stylesheet type="text/css" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>NTUT CISLab</title>
+	<title>NTUT CISLab(測試用網站)</title>
 	<!--<link rel="shortcut icon" href="pt/favicon.ico" type="image/x-icon">-->
 	<!--AOS連結-->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -52,7 +52,7 @@
 				<h1 data-aos="fade-right">about</h1>
 				<section>
 					<div class="description">
-						<p>歡迎來到嘴砲聯盟!充滿愛與歡樂的實驗室~</p>
+						<p>歡迎來到充滿愛與歡樂的實驗室~</p>
 						<p></p>
 						<br>
 						<p>研究方向：</p>
@@ -91,38 +91,39 @@
 					<br>
 					<div class="wrap">
 						<h2>小夥伴：</h2>
-
+						<h2>2022：</h2>
 						<div class="image">
 							<div>
-								<img src="pt/1.jfif">
-								<p>海綿寶</p>
+								<img src="pt/1.jpg">
+								<p class="img_div">賴宗賢</p>
 							</div>
 							<div>
-								<img src="pt/2.jfif">
-								<p>派大</p>
+								<img src="pt/2.jpg">
+								<p class="img_div">張廷宇</p>
 							</div>
 							<div>
-								<img src="pt/3.jfif">
-								<p>謝老</p>
+								<img src="pt/3.jpg">
+								<p class="img_div">顏新展</p>
 							</div>
 							<div>
-								<img src="pt/4.jfif">
-								<p>珍珍</p>
-							</div><div>
-								<img src="pt/1.jfif">
-								<p>海綿寶</p>
+								<img src="pt/4.jpg">
+								<p class="img_div">林姵妏</p>
 							</div>
 							<div>
-								<img src="pt/2.jfif">
-								<p>派大</p>
+								<img src="pt/5.jpg">
+								<p class="img_div">張桓齊</p>
 							</div>
 							<div>
-								<img src="pt/3.jfif">
-								<p>謝老</p>
+								<img src="pt/6.jpg">
+								<p class="img_div">張國洋</p>
 							</div>
 							<div>
-								<img src="pt/4.jfif">
-								<p>珍珍</p>
+								<img src="pt/7.jpg">
+								<p class="img_div">洪景章</p>
+							</div>
+							<div>
+								<img src="pt/8.jpg">
+								<p class="img_div">謝宗辰</p>
 							</div>
 							<div style="visibility:hidden">
 								<img>
@@ -132,6 +133,18 @@
 								<img>
 								<p></p>
 							</div>
+						</div>
+						<h2>2023：</h2>
+						<div class="image">
+							<!--<div style="visibility:hidden">
+								<img>
+								<p></p>
+							</div>
+							<div style="visibility:hidden">
+								<img>
+								<p></p>
+							</div>-->
+							
 						</div>
 						
 					</div>
