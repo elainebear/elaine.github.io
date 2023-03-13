@@ -319,7 +319,7 @@ table img{
 .childdiv{
 	
 	width:32%;
-	height:400px;
+	//height:400px;
 	margin:1%;
 	background-color: rgba(243,130,136,0.2);
 	padding:10px;
@@ -332,7 +332,7 @@ h3{
 	padding:15px;
 }
 .map{
-	height:260px;
+	//height:260px;
 	//background-color:#ccc;
 }
 iframe{
@@ -376,9 +376,32 @@ footer .container{
 	list-style: none;
     display:inline-block;
 	margin:auto;
-	font-size:16px;
+	}
+	.menu a{
+	display:flex;
+	color:#000;
+	text-decoration: none;
+	font-weight:bold;
+	font-size:20px;
+	line-height:50px;
+	padding: 0 0.8em;
 	}
 	
+	article{
+	width:80%;
+	max-height:600px;
+	margin:0px auto;
+	margin-top:100px;
+	padding:20px;
+	overflow: auto;
+	box-shadow: 0 10px 20px 0 rgba(237, 110, 160,.3);
+	}
+	.boss{
+	display: flex;
+	flex-direction:column;
+	text-align: left;
+	line-height:30px;
+	}
 	
 	.contactus{
 	display: flex;
