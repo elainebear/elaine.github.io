@@ -115,6 +115,7 @@ nav .container{
 
 .logo{
 	display:inline;
+	width:20%;
 }
 .logo a{
 	text-decoration: none;
@@ -138,21 +139,24 @@ nav .container{
 	
 .menu{
     float:right;
+	
 }
 .menu li{
 	list-style: none;
     float:left;
+	display:inline-block;
+	
 }
 
 .menu a{
 	display:flex;
-    margin-right: 20px;
+    //margin-right: 20px;
 	color:#000;
 	text-decoration: none;
 	font-weight:bold;
 	font-size:24px;
 	line-height:50px;
-	padding: 0 1em;
+	padding: 0 0.8em;
 }
     
 .menu a:hover{
@@ -364,29 +368,34 @@ footer .container{
 	}
 	.menu{
 	width:100%;
-    text-align:justify;
-	background-color: #fff;
+   	background-color: #fff;
+	text-align:justify;
+	display:flex;
 	}
 	.menu li{
 	list-style: none;
-    float:left;
-	width:20%;
-	margin:1%;
+    display:inline-block;
+	margin:auto;
+	font-size:16px;
 	}
 	
-	.Contact{
+	
+	.contactus{
 	display: flex;
 	flex-direction:column;
 	}
 	.childdiv{
 	
 	width:80%;
-	//height:200px;
-	margin:1%;
+	height:auto;
+	margin:0 auto;
 	background-color: rgba(243,130,136,0.2);
 	padding:10px;
-	//text-align:center;
+	
 	}
+	.map{
+	height:auto;
+}
 	iframe{
 		display:none;
 	}
