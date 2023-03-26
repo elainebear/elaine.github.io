@@ -68,13 +68,12 @@
 						<h2>老大：</h2>
 						<div class="image">
 							<div class="boss">
-								<div style="margin-right:35px">	
+								<div>	
 									<img src="pt/boss.jpg">
-									
 								</div>
-								<div style="margin:20px ">
-									<b style="font-size:30px">Yu-Chi Chen 陳昱圻</b>
-									<p style="font-size:20px"><b>：我的課很操，身心俱疲的那種，但我都不太當(ㄉㄤˋ)人</b></p>
+								<div>
+									<b>Yu-Chi Chen 陳昱圻</b>
+									<p class="pbold">：我的課很操，身心俱疲的那種，但我都不太當(ㄉㄤˋ)人</p>
 									<br>
 									<p>國立臺北科技大學 資訊工程系</p>
 									<p>研究領域: 密碼學、資訊安全、區塊鏈</p>
@@ -84,7 +83,6 @@
 									<a href="https://wycchen.github.io/" target="_blank">點擊了解更多Yu-Chi Chen ^3^</a>
 								</div>
 							</div>
-							
 						</div>
 					</div>
 					<hr class="hr1">

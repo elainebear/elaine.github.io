@@ -243,11 +243,27 @@ h1{
 	flex-wrap: wrap;
 	text-align: center;
 }
+.image div{
+	margin:10px;
+}
 .boss{
 	display: flex;
 	text-align: left;
 	line-height:30px;
 }
+
+.boss div{
+	margin:10px;
+}
+
+.boss b{
+	font-size:28px;
+	}
+.pbold{
+	font-size:20px;
+	font-weight:bolder;
+}
+	
 .boss a{
 	display:flex;
     margin-right: 20px;
@@ -262,16 +278,18 @@ h1{
 	background-clip: text !important;
 	transition:0.3s;
 }
+.hide{
+	visibility:hidden;
+}
 
 .image .boss img{
 	width:250px;
-	height:250px;
-	margin:20px 0%;	
+	height:250px;	
 }	
 .image img{
 	width:200px;
 	height:200px;
-	margin:20px 0%;	
+	//margin:20px 0%;	
 }
 table img{
 	width:200px;
@@ -382,7 +400,7 @@ footer .container{
 	color:#000;
 	text-decoration: none;
 	font-weight:bold;
-	font-size:20px;
+	font-size:18px;
 	line-height:50px;
 	padding: 0 0.8em;
 	}
@@ -402,7 +420,20 @@ footer .container{
 	text-align: left;
 	line-height:30px;
 	}
+	.boss div{
+		margin:10px;
+	}
 	
+	.boss b{
+	font-size:24px;
+	}
+	.pbold{
+		font-size:16px;
+		font-weight:bolder;
+	}
+	.hide{
+	display:none;
+	}
 	.contactus{
 	display: flex;
 	flex-direction:column;
