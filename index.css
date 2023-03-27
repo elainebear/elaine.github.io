@@ -312,6 +312,8 @@ h1{
 
 .img_div{
 	background-color:#fff;
+	max-width:200px;
+	margin:auto;
 	//padding:10px;
 }
 .hr1{
@@ -464,7 +466,6 @@ footer .container{
 	.std_img {
 	flex:0 0 calc(40% - 8px);
 	max-width:calc(40% - 8px);
-	padding:10px;
 	margin:auto;
 	}
 	.std_img img{
@@ -509,7 +510,6 @@ footer .container{
 	.std_img {
 	flex:0 0 calc(40% - 8px);
 	max-width:calc(40% - 8px);
-	padding:1%;
 	margin:auto;
 	}
 	.std_img img{
@@ -517,8 +517,7 @@ footer .container{
 	height:80%;
 	max-width:200px;
 	max-height:200px;
-	min-width:130px;
-	min-height:130px;
-	//margin:20px 0%;	
+	min-width:115px;
+	min-height:115px;
 	}
 }
