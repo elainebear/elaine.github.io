@@ -1,10 +1,11 @@
+/*載入畫面*/
 $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
     $("#status").delay(0).fadeOut(1000); //delay --> 延遲幾秒才fadeOut
     $("#preloader").delay(250).fadeOut(1000);
 })
 
 
-
+/*導覽列變色*/
 $(document).ready(() => {
             //滾動事件
 	$(document).scroll(() => {
@@ -72,3 +73,4 @@ $(document).ready(() => {
   });
 });
 	
+ 
