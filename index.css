@@ -10,10 +10,11 @@
 	height:100%;
 	left: 0%;
 	right: 0%;
-	background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+	background-image: linear-gradient(to right, #3055d0 0%, #330867 100%);
+
 	z-index:9999;
 }
-.ring /*中間那個寫著loading的圈圈*/
+.ring /*中心*/
 {
   position:absolute;
   top:50%;
@@ -22,7 +23,7 @@
   width:150px;
   height:150px;
   background:transparent;
-  border:3px solid #ff867a;
+  border:3px solid #3255d0;
   border-radius:50%;
   text-align:center;
   line-height:150px;
@@ -64,36 +65,26 @@ span:before /*繞圈圓點點*/
 {
   content:'';
   position:absolute;
-  width:16px;
-  height:16px;
+  width:14px;
+  height:14px;
   border-radius:50%;
   background:#ffffff;
   top:-6px;
   right:-8px;
-  box-shadow:0 0 50px #ffffff;
+  box-shadow:0 0 5px #ffffff;
 }
 @keyframes animateC /*css動畫時間軸*/
 {
-  0%
-  {
-    transform:rotate(0deg);
-  }
-  100%
-  {
-    transform:rotate(360deg);
-  }
+  0%	{transform:rotate(0deg);}
+  100%	{transform:rotate(360deg);}
 }
 @keyframes animate 
 {
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
+  0%	{transform:rotate(45deg);}
+  25%	{transform:rotate(90deg);}
+  100%  {transform:rotate(405deg);}
 }
+
 /*--------------------------------------------------*/
 nav{
 	z-index:1;
@@ -156,7 +147,7 @@ nav .container{
 .menu a:hover{
     
 	color: transparent !important; /* 文字顏色設定透明 */
-	background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%) !important; /* 設定漸層角度及顏色 */
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 	-webkit-background-clip: text !important; /* 背景裁剪成文字的前景色 */
 	background-clip: text !important;
 	transition:0.3s;
@@ -165,6 +156,7 @@ nav .container{
 header{
 	height:110vh ;
 	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+	background-image: linear-gradient(to bottom, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
 	max-width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -175,8 +167,6 @@ header .container{
 	margin:0 auto;
 }
 .text-area{
-	//background-color:#000;
-	//opacity:0.5;
 	margin-top:250px;
 }
 .text{
@@ -206,8 +196,6 @@ article img{
 	border-radius:2%;
 }
 .description{
-	//background-color: rgba(243,130,136,0.2);
-	//height:300px;
 	padding:10px;
 	border:2px solid rgba(243,130,136,0.2);
 }
@@ -232,7 +220,6 @@ h1{
 	justify-content: center;
 	flex-wrap: wrap;
 	text-align: center;
-	//width:90%;
 	margin:auto;
 }
 
@@ -295,7 +282,6 @@ h1{
 .image img{
 	width:200px;
 	height:200px;
-	//margin:20px 0%;	
 }
 
 
@@ -303,21 +289,17 @@ h1{
 	background-color:#fff;
 	max-width:200px;
 	margin:auto;
-	//padding:10px;
 }
 .hr1{
 	border:1.5px dashed rgba(243,130,136,0.2);
 }
 
 .project_list{
-	//background-color: rgba(243,130,136,0.2);
 	padding:10px;
-	//min-height:300px;
 	border:2px solid rgba(243,130,136,0.2);
 }
 .project_list ul li{
 	list-style: none;
-	//background-color:#fff;
 	margin: 8px 0;
 	font-weight:bold;
 	padding:3px;	
@@ -341,7 +323,6 @@ h1{
 .childdiv{
 	
 	width:32%;
-	//height:400px;
 	margin:1%;
 	background-color: rgba(243,130,136,0.2);
 	padding:10px;
@@ -365,11 +346,15 @@ footer{
 	color:#fff;
 	background-color:#000;
 	margin-top:100px;
-	//align-items:center;
+	text-align: center;
+	line-height: 100px;
 }
 footer .container{
 	width:80%;
 	margin:0 auto;
+}
+footer a{
+	color: #fff;
 }
 
 @media (max-width: 1150px){
