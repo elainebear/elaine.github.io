@@ -183,16 +183,34 @@ body{
 main{
 	flex: 1;
 }
+
 article{
 	width:1100px;
 	max-height:600px;
-	min-height: 400px;
 	margin:0px auto;
 	margin-top:100px;
 	padding:20px;
 	overflow: auto;
 	box-shadow: 0 10px 20px 0 rgba(237, 110, 160,.3);
 }
+
+.childdiv_profile_img{
+	width:25%;
+	margin:1%;
+	background-color: rgba(243,130,136,0.2);
+	padding:10px;
+	text-align:center;
+	min-height: 300px;
+}
+.childdiv_profile_description{
+	width:71%;
+	margin:1%;
+	background-color: rgba(243,130,136,0.2);
+	padding:10px;
+	text-align:center;
+	min-height: 300px;
+}
+
 article img{
 	border-radius:2%;
 }
@@ -210,11 +228,18 @@ h1{
 	color: #f27b13;
 	text-shadow:0 0 0.2em #fcd0c5;
 }
-.wrap{
+.wrap_odd{
 	margin: auto;
 	background-color: rgba(243,130,136,0.2);
 	padding:10px;
 }
+.wrap_even{
+	margin: auto;
+	//background-color: rgba(243,130,136,0.2);
+	border:2px solid rgba(243,130,136,0.2);
+	padding:10px;
+}
+
 .image{
 	border:3px #fff;
 	display: flex;
@@ -276,8 +301,7 @@ h1{
 .std_img {
 	flex:0 0 22%;
 	max-width:22%;
-	padding:1%;
-	margin:auto;
+	margin: auto;
 }
 
 .image img{
@@ -287,9 +311,8 @@ h1{
 
 
 .img_div{
-	background-color:#fff;
 	max-width:200px;
-	margin:auto;
+	margin:auto ;
 }
 .hr1{
 	border:1.5px dashed rgba(243,130,136,0.2);
@@ -327,7 +350,10 @@ h1{
 	background-color: rgba(243,130,136,0.2);
 	padding:10px;
 	text-align:center;
+	min-height: 300px;
+
 }
+
 h3{
 	text-align:center;
 	margin:10px;
